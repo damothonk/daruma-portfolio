@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+        <title>Daruma Portfolio SKILL, WORKS & LEARNING</title>
+        <link href="./pfstyle_pc.css" rel="stylesheet" media="screen and (min-width : 960px)">
+        <link href="./pfstyle_mobile.css" rel="stylesheet" media="screen and (max-width : 959px)">
+        <link rel="icon" type="image/png" href=""><!--最後ファビコンの設定-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="./pfdaruma.js"></script>
+     </head>
+    
+    <body>
+
+        <div class="background" id="background">
+
+            <header>
+                <h1 class="title" id="title">Daruma's Portfolio</h1>
+                <div class="clear"></div>
+            </header>
+
+            <div id="menuBtn" class="menuBtn">
+                    <div class="menuBtn_Bar"></div>
+                    <div class="menuBtn_Bar"></div>
+                    <div class="menuBtn_Bar"></div>
+                    <div class="menuBtn_Bar"></div>
+            </div>
+
+            <nav class="menu" id="menu">
+                <ul class="menu_area" id="menu_area">
+                    <li><a class="menu_header" href="./index.html">TOP</a></li>
+                    <li><a class="menu_header" href="./pfdaruma_profile.html">PROFILE</a></li>
+                    <li><a class="menu_header" href="./pfdaruma_skills.php">SKILL&WORKS</a></li>
+                    <li><a class="menu_header" href="./pfdaruma_bbs.php">BBS</a></li>
+                </ul>
+            </nav>
+
+            <main>
+
+            </main>
+
+            <footer>
+                <ul class="" id="">
+                    <li><a class="menu_foot" href="./index.html">TOP</a></li>
+                    <li><a class="menu_foot" href="./pfdaruma_profile.html">PROFILE</a></li>
+                    <li><a class="menu_foot" href="./pfdaruma_skills.php">SKILL&WORKS</a></li>
+                    <li><a class="menu_foot" href="./pfdaruma_bbs.php">BBS</a></li>
+                </ul>
+            </footer>
+
+        </div>
+
+    </body>
+
+    <!--error_Failed to create chart: can't acquire context from the given item_対策-->
+    <div id="bgGraph" style="display: none;">
+        <canvas class="chart" id="profile_chart"></canvas>
+    </div>
+    
+</html>
