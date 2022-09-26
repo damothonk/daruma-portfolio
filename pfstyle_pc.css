@@ -45,8 +45,8 @@ header{
 .menuBtn{
     display: block;
     position: fixed;
-    left: 10px;
-    top: 10px;
+    left: 15px;
+    top: 20px;
     width: 60px;
     height: 55px;
     transition: 0.3s;
