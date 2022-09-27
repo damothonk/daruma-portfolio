@@ -125,9 +125,10 @@ main{
 
 .text{
     text-align: center;
+    padding: 1em;
 }
 
-/*====main_profile====*/
+/*====main_skills====*/
 .arti_prof{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -140,6 +141,10 @@ main{
 .prof_img{
     width: 480px;
     height: auto;
+}
+
+.text-skills{
+    padding: 1em;
 }
 
 /*グラフ*/
