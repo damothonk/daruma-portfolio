@@ -23,7 +23,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
         <title>Daruma Portfolio BBS</title>
         <link href="./pfdaruma_bbspc.css" rel="stylesheet" media="screen and (min-width : 960px)">
-        <link href="./pfstyle_bbsmb.css" rel="stylesheet" media="screen and (max-width : 959px)">
+        <link href="./pfdaruma_bbsmb.css" rel="stylesheet" media="screen and (max-width : 959px)">
         <link rel="icon" type="image/png" href=""><!--最後ファビコンの設定-->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
@@ -41,22 +41,6 @@
                 <div class="clear"></div>
             </header>
 
-            <div id="menuBtn" class="menuBtn">
-                    <div class="menuBtn_Bar"></div>
-                    <div class="menuBtn_Bar"></div>
-                    <div class="menuBtn_Bar"></div>
-                    <div class="menuBtn_Bar"></div>
-            </div>
-
-            <nav class="menu" id="menu">
-                <ul class="menu_area" id="menu_area">
-                    <li><a class="menu_header" href="./index.html">TOP</a></li>
-                    <li><a class="menu_header" href="./pfdaruma_profile.html">PROFILE</a></li>
-                    <li><a class="menu_header" href="./pfdaruma_skills.php">SKILL&WORKS</a></li>
-                    <li><a class="menu_header" href="./pfdaruma_bbs.php">BBS</a></li>
-                </ul>
-            </nav>
-
             <main>
                 <div class="subTitles" id="bbs_post_head">
                     <h2>掲示板</h2>
@@ -72,7 +56,7 @@
                             <h3>書き込み欄</h3>
                         </div>
                         <div id="buttonMks">
-                            <img class="mkImgs" src="./img/ikonate/ikonate_off/svg/switch-off.svg" alt="off">
+                            <img class="mkImgs" id="btnImg" src="./img/ikonate/ikonate_off/svg/switch-off.svg" alt="off">
                         </div>
                     </div>
 
@@ -86,16 +70,25 @@
                         </label>
 
                         <!--投稿者名-->
-                        <input type="text" name="postName" size="12" placeholder="投稿者名">
-                        <select id="" class="" required>
-                            <option value="">さん</option>
-                            <option value="">氏</option>
-                            <option value="">殿</option>
-                        </select>
+                        <span>
+                            <input type="text" name="postName" size="12" placeholder="投稿者名">
+                            <select id="" class="" required>
+                                <option value="">さん</option>
+                                <option value="">氏</option>
+                                <option value="">殿</option>
+                            </select>
+                        </span>
+
+                        <!--削除-->
+                        <span>
+                            <input type="password" name="pass" size="14" placeholder="削除パス" maxlength="12">
+                        </span>
 
                         <!--本文-->
-                        <textarea cols="15" rows="2" name="message" placeholder="本文"></textarea>
-
+                        <span>
+                            <textarea cols="15" rows="2" name="message" placeholder="本文"></textarea>
+                        </span>
+                        
                         <!--画像アップロード-->
                         <label class="imgFile">
                             <span>"画像のアップロード"</span>
