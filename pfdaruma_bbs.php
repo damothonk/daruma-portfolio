@@ -81,14 +81,14 @@
 
                         <!--削除-->
                         <span>
-                            <input type="password" name="pass" size="14" placeholder="削除パス" maxlength="12">
+                            <input type="password" name="pass" size="14" placeholder="削除用パス" maxlength="12">
                         </span>
 
                         <!--本文-->
                         <span>
-                            <textarea cols="15" rows="2" name="message" placeholder="本文"></textarea>
+                            <textarea class="" id="mes" name="mes" placeholder="本文"></textarea>
                         </span>
-                        
+
                         <!--画像アップロード-->
                         <label class="imgFile">
                             <span>"画像のアップロード"</span>

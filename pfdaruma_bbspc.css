@@ -41,67 +41,6 @@ header{
     clear: both;
 }
 
-/*メニューボタン*/
-.menuBtn{
-    display: block;
-    position: fixed;
-    left: 15px;
-    top: 20px;
-    width: 60px;
-    height: 55px;
-    transition: 0.3s;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.menuBtn:hover{
-    opacity: 0.9;
-}
-
-.menuBtn_Bar{
-    text-align: center;
-    width: 48px;
-    height: 4px;
-    border-radius: 3px;
-    margin: 8px 6px;
-    background-color: #9fd;   
-}
-
-/*メニューバー*/
-nav{
-    display: none;
-    position: fixed;
-    top: 80px;
-    margin: 8px 8px 8px 0;  
-    z-index: 999;
-}
-
-nav > ul{
-    list-style: none;
-}
-
-nav > ul > li{
-    margin: 10px 0;
-    width: 165px;
-}
-
-.menu_header{
-    display: block;
-    background-color:#035;
-    opacity: 0.6;
-    transition: 0.3s;
-    padding: 8px;
-    font-weight: 600;
-    border-radius: 3px;
-    color: #9fd;
-    letter-spacing: .1em;
-    margin: 10px 0; 
-}
-
-.menu_header:hover{
-    opacity: 1.0;
-}
-
 /*----リンク----*/
 a{
     text-decoration: none;
@@ -167,7 +106,8 @@ main{
     margin: 5px 0;
 }
 
-/*書き込み欄*/
+/*==書き込み欄==*/
+/*--bbsPost--*/
 #bbs_post{
     display: flex;
     width: 80vw;
@@ -197,7 +137,22 @@ main{
     padding: 2px;
 }
 
-/*書き込み欄折畳み*/
+/*--bbsInputs--*/
+/*本文*/
+#mes{
+    width: 100%;
+    margin: 1px;
+}
+
+/*画像・送信*/
+.imgFile{
+    cursor: pointer;
+}
+.imgFile > input[type="file"]{
+    display: none;
+}
+
+/*==書き込み欄折畳み==*/
 .hidden{
     display: none;
 }
