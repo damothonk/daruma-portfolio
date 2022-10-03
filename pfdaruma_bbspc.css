@@ -157,6 +157,7 @@ main{
 
 /*画像・送信*/
 .imgFile, .submit{
+    display: inline-block;
     cursor: pointer;
     margin: 8px 5px;
     padding: 5px;
@@ -165,8 +166,12 @@ main{
     color: #000;
 }
 
-#sbmOutter{
-    margin-top: 3px;
+.submit{
+    background-color: #ecd834;
+    float: right;
+}
+.clear{
+    clear: both;
 }
 
 .imgFile > input[type="file"]{

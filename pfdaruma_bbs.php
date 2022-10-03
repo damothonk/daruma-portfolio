@@ -62,44 +62,45 @@
 
                     <!--bbsInputs-->
                     <div id="input1" class="inputs">
+                        <form id="" method="post" action="./pfdaruma_insert.php">
+                            <!--新規チェック-->
+                            <label>
+                                <input class="ipt" type="checkbox" name="newUser" value="1" checked="checked">
+                                "新規"
+                            </label>
 
-                        <!--新規チェック-->
-                        <label>
-                            <input class="ipt" type="checkbox" name="newUser" value="1" checked="checked">
-                            "新規"
-                        </label>
+                            <!--投稿者名-->
+                            <span>
+                                <input class="ipt" type="text" name="postName" size="12" placeholder="投稿者名">
+                                <select class="ipt" id="" required>
+                                    <option value="">さん</option>
+                                    <option value="">氏</option>
+                                    <option value="">殿</option>
+                                </select>
+                            </span>
 
-                        <!--投稿者名-->
-                        <span>
-                            <input class="ipt" type="text" name="postName" size="12" placeholder="投稿者名">
-                            <select class="ipt" id="" required>
-                                <option value="">さん</option>
-                                <option value="">氏</option>
-                                <option value="">殿</option>
-                            </select>
-                        </span>
+                            <!--削除-->
+                            <span>
+                                <input class="ipt" type="password" name="pass" size="14" placeholder="削除用パス" maxlength="12">
+                            </span>
 
-                        <!--削除-->
-                        <span>
-                            <input class="ipt" type="password" name="pass" size="14" placeholder="削除用パス" maxlength="12">
-                        </span>
+                            <!--本文-->
+                            <span>
+                                <textarea class="ipt" id="mes" name="mes" placeholder="本文"></textarea>
+                            </span>
 
-                        <!--本文-->
-                        <span>
-                            <textarea class="ipt" id="mes" name="mes" placeholder="本文"></textarea>
-                        </span>
+                            <!--画像アップロード-->
+                            <label class="imgFile">
+                                <span>"画像のアップロード"</span>
+                                <input name="picture" type="file">
+                            </label>
 
-                        <!--画像アップロード-->
-                        <label class="imgFile">
-                            <span>"画像のアップロード"</span>
-                            <input name="picture" type="file">
-                        </label>
-
-                        <!--送信ボタン-->
-                        <form id="sbmOutter" method="post" action="">
+                            <!--送信ボタン-->                            
                             <input class="submit" id="" type="submit" value="書き込む">
+                            <div class=".clear"></div>
+
                         </form>
-                        
+
                     </div>
 
                 </section>
