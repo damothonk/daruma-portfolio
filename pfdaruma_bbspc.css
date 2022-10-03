@@ -110,6 +110,7 @@ main{
 /*--bbsPost--*/
 #bbs_post{
     display: flex;
+    margin-bottom: 1px;
     width: 80vw;
     max-width: 960px;
     border: 2px solid #9fd;
@@ -118,6 +119,7 @@ main{
     transition: 0.3s;
     align-items: center;
     cursor: pointer;
+    background-color: rgb(5, 46, 73);
 }
 
 #bbs_post:hover{
@@ -138,18 +140,41 @@ main{
 }
 
 /*--bbsInputs--*/
+#input1{
+    background-color: #035; 
+}
+
+.ipt{
+    margin: 3px;
+    padding: 5px 3px;
+}
+
 /*本文*/
 #mes{
     width: 100%;
-    margin: 1px;
+    margin: 2px 1px;
 }
 
 /*画像・送信*/
-.imgFile{
+.imgFile, .submit{
     cursor: pointer;
+    margin: 8px 5px;
+    padding: 5px;
+    border: 3px solid #cccccc;
+    background-color: white;
+    color: #000;
 }
+
+#sbmOutter{
+    margin-top: 3px;
+}
+
 .imgFile > input[type="file"]{
     display: none;
+}
+
+.imgFile > span{
+    display: inline-block;
 }
 
 /*==書き込み欄折畳み==*/

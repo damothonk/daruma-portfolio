@@ -65,14 +65,14 @@
 
                         <!--新規チェック-->
                         <label>
-                            <input type="checkbox" name="newUser" value="1" checked="checked">
+                            <input class="ipt" type="checkbox" name="newUser" value="1" checked="checked">
                             "新規"
                         </label>
 
                         <!--投稿者名-->
                         <span>
-                            <input type="text" name="postName" size="12" placeholder="投稿者名">
-                            <select id="" class="" required>
+                            <input class="ipt" type="text" name="postName" size="12" placeholder="投稿者名">
+                            <select class="ipt" id="" required>
                                 <option value="">さん</option>
                                 <option value="">氏</option>
                                 <option value="">殿</option>
@@ -81,12 +81,12 @@
 
                         <!--削除-->
                         <span>
-                            <input type="password" name="pass" size="14" placeholder="削除用パス" maxlength="12">
+                            <input class="ipt" type="password" name="pass" size="14" placeholder="削除用パス" maxlength="12">
                         </span>
 
                         <!--本文-->
                         <span>
-                            <textarea class="" id="mes" name="mes" placeholder="本文"></textarea>
+                            <textarea class="ipt" id="mes" name="mes" placeholder="本文"></textarea>
                         </span>
 
                         <!--画像アップロード-->
@@ -96,9 +96,10 @@
                         </label>
 
                         <!--送信ボタン-->
-                        <form method="post" action="">
-                            <input type="submit" value="書き込む">
+                        <form id="sbmOutter" method="post" action="">
+                            <input class="submit" id="" type="submit" value="書き込む">
                         </form>
+                        
                     </div>
 
                 </section>
