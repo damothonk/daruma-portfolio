@@ -71,17 +71,17 @@
 
                             <!--投稿者名-->
                             <span>
-                                <input class="ipt" type="text" name="postName" size="12" placeholder="投稿者名">
-                                <select class="ipt" id="" required>
-                                    <option value="">さん</option>
-                                    <option value="">氏</option>
-                                    <option value="">殿</option>
+                                <input class="ipt" type="text" name="postName" size="12" placeholder="投稿者名" required>
+                                <select class="ipt" id="ops" name="subName" required>
+                                    <option value="san">さん</option>
+                                    <option value="shi">氏</option>
+                                    <option value="dono">殿</option>
                                 </select>
                             </span>
 
                             <!--削除-->
                             <span>
-                                <input class="ipt" type="password" name="pass" size="14" placeholder="削除用パス" maxlength="12">
+                                <input class="ipt" type="password" name="delPass" size="14" placeholder="削除用パス" maxlength="12">
                             </span>
 
                             <!--本文-->
@@ -96,8 +96,8 @@
                             </label>
 
                             <!--送信ボタン-->                            
-                            <input class="submit" id="" type="submit" value="書き込む">
-                            <div class=".clear"></div>
+                            <input class="submit" type="submit" value="書き込む">
+                            <div class="clear"></div>
 
                         </form>
 
