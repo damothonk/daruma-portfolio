@@ -92,7 +92,7 @@
                             <!--画像アップロード-->
                             <label class="imgFile">
                                 <span>"画像のアップロード"</span>
-                                <input name="picture" type="file">
+                                <input name="images" type="file">
                             </label>
 
                             <!--送信ボタン-->                            
