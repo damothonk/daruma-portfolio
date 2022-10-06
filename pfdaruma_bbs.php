@@ -9,7 +9,7 @@
 		return htmlspecialchars($str, ENT_QUOTES, 'utf-8');
 	}
 
-	//GETデータの取得
+	//GETデータの取得(検索のため、実装判断中)
 	$keyword = '';
 	if(isset($_GET['keyword']) && $_GET['keyword'] !== ''){
 		$keyword = $_GET['keyword'];
@@ -81,7 +81,7 @@
 
                             <!--削除-->
                             <span>
-                                <input class="ipt" type="password" name="delPass" size="14" placeholder="削除用パス" maxlength="12">
+                                <input class="ipt" type="password" name="delPass" size="14" placeholder="削除用パス(6-12文字)" maxlength="12" minlength="6" required>
                             </span>
 
                             <!--本文-->
