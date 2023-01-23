@@ -209,6 +209,11 @@ main{
     border-radius: 8px;
 }
 
+/*====pfdaruma_works====*/
+.works{
+    display: flex;
+    width: 40vw;
+}
 
 /*フッター*/
 footer{
