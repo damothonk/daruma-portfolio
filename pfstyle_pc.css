@@ -210,9 +210,11 @@ main{
 }
 
 /*====pfdaruma_works====*/
-.works{
-    display: flex;
-    width: 40vw;
+#works{
+    width: 960px;
+}
+.works_contents{
+    display: inline-block;
 }
 
 /*フッター*/
