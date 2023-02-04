@@ -211,7 +211,8 @@ main{
 
 /*====pfdaruma_works====*/
 #works{
-    width: 960px;
+   text-align: center;
+   margin: 0 auto;
 }
 .works_contents{
     display: inline-block;
