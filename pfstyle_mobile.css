@@ -149,6 +149,35 @@ main > article{
     margin: 10px auto;
 }
 
+/*====pfdaruma_works====*/
+#works{
+    text-align: center;
+    margin: 10px auto;
+ }
+ 
+ #worksPage{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .works_contents{
+     margin: auto 0;
+ }
+ 
+ .works_contents > h3{
+     text-align: center;
+ }
+ 
+ .works_contents > p{
+     text-align: center;
+ }
+ 
+ .worksImgs{
+     width: 400px;
+     height: auto;
+     margin: 10px;
+ }
+
 /*フッター*/
 footer{
     background-image: url(./img/darkness.jpeg);
@@ -191,5 +220,11 @@ footer > ul > li{
         width: 95%;
         height: auto;
         margin: 7px auto;
+    }
+
+    .worksImgs{
+        width: 95%;
+        height: auto;
+        margin: 10px;
     }
 }

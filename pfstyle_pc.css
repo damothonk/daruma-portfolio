@@ -212,10 +212,30 @@ main{
 /*====pfdaruma_works====*/
 #works{
    text-align: center;
-   margin: 0 auto;
+   margin: 10px auto;
 }
+
+#worksPage{
+    display: flex;
+}
+
 .works_contents{
-    display: inline-block;
+    margin: auto 0;
+    flex-direction: column;
+}
+
+.works_contents > h3{
+    text-align: center;
+}
+
+.works_contents > p{
+    text-align: center;
+}
+
+.worksImgs{
+    width: 400px;
+    height: auto;
+    margin: 10px;
 }
 
 /*フッター*/
